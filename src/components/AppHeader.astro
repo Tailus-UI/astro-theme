@@ -1,6 +1,11 @@
+---
+import Container from "./Container.astro";
+
+---
+
 <header>
     <nav class="fixed z-10 w-full dark:bg-gray-900/70 bg-white/70 md:absolute md:bg-transparent backdrop-blur-2xl lg:backdrop-blur-none">
-        <div class="container m-auto px-2 md:px-12 lg:px-7">
+        <Container>
             <div class="flex flex-wrap items-center justify-between py-2 gap-6 md:py-4 md:gap-0 relative">
                 <input type="checkbox" name="toggle_nav" id="toggle_nav" class="hidden peer">
                 <div class="w-full px-6 flex justify-between lg:w-max md:px-0">
@@ -70,7 +75,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </Container>
     </nav>
 </header>
 
