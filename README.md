@@ -1,11 +1,9 @@
-# Welcome to [Astro](https://astro.build)
+# astrolus
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
+A page template built with astro and tailwindcss using tailus blocks.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![basics](https://user-images.githubusercontent.com/4677417/186188965-73453154-fdec-4d6b-9c34-cb35c248ae5b.png)
-
+![Tailus astro based theme](./public/astrolus-light.png)
+![Tailus astro based dark theme](./public/astrolus-dark.png)
 
 ## 🚀 Project Structure
 
