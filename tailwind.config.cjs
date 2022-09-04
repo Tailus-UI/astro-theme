@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  ontent: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   presets: [],
-  darkMode: 'class', // or 'class'
+  darkMode: 'media', // or 'class'
   theme: {
     screens: {
       sm: '640px',
@@ -15,24 +15,24 @@ module.exports = {
       inherit: colors.inherit,
       current: colors.current,
       transparent: colors.transparent,
-      primary: "#00AEDC",
-      secondary: "#01FCE8",
-      dark: "#1B2022",
+      primary: "#9333EA",
+      secondary: "#ff7e33",
+      info: "#0C63E7",
       darker : "#15191B",
       black: colors.black,
       white: colors.white,
       slate: colors.slate,
       gray: {
-        50: "#F8FAFC",
-        100: "#ECEFF1",
-        200: "#D4DADE",
-        300: "#C8CED2",
-        400: "#99A4A8",
-        500: "#7C8587",
-        600: "#50585A",
-        700: "#353B3E",
-        800: "#282E32",
-        900: "#1B2022",
+        50: "#FAFAFC",
+        100: "#E9E9EC",
+        200: "#C6C8CD",
+        300: "#ACAEB6",
+        400: "#92959F",
+        500: "#777C87",
+        600: "#5D6370",
+        700: "#434959",
+        800: "#293041",
+        900: "#0f172a",
       },
       zinc: colors.zinc,
       neutral: colors.neutral,
