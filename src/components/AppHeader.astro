@@ -12,7 +12,7 @@ const links = [
     {
         to: "/#reviews",
         label: "Reviews",
-    }
+    },
 ];
 ---
 
@@ -21,10 +21,10 @@ const links = [
     const navlinks = document.querySelector("#navlinks");
     const hamburger = document.querySelector("#hamburger");
     const layer = document.querySelector("#navLayer");
-    const links = [...navlinks.querySelector("ul").children]
+    const links = [...navlinks.querySelector("ul").children];
 
-    function toggleNavlinks (){
-         if (isToggled) {
+    function toggleNavlinks() {
+        if (isToggled) {
             navlinks.classList.add("!visible", "!scale-100", "!opacity-100", "!lg:translate-y-0");
             hamburger.classList.add("toggled");
             layer.classList.add("origin-top", "scale-y-100");
@@ -36,15 +36,15 @@ const links = [
     }
     hamburger.addEventListener("click", () => {
         isToggled = !isToggled;
-        toggleNavlinks()
+        toggleNavlinks();
     });
 
-    links.forEach((link) =>{
-        link.addEventListener("click", ()=>{
-            isToggled = !isToggled
-            toggleNavlinks()
-        })
-    })
+    links.forEach((link) => {
+        link.addEventListener("click", () => {
+            isToggled = !isToggled;
+            toggleNavlinks();
+        });
+    });
 </script>
 
 <header>
@@ -81,11 +81,9 @@ const links = [
                                 ))
                             }
                             <li>
-                                <a href="" class="font-semibold text-gray-700 gap-2 dark:text-white flex hover:text-primary transition dark:hover:text-white md:px-4">
+                                <a href="https://tailus.gumroad.com/l/astls-premium" target="_blank" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4">
                                     <span>Premium</span>
-                                    <span class="px-1.5 py-0.5 text-xs tracking-wider  rounded-full flex bg-primary/20 dark:bg-white/10 text-purple-700 dark:text-orange-300">
-                                        new
-                                    </span>
+                                    <span class="flex rounded-full bg-primary/20 px-1.5 py-0.5 text-xs tracking-wider text-purple-700 dark:bg-white/10 dark:text-orange-300"> new</span>
                                 </a>
                             </li>
                         </ul>
