@@ -1,4 +1,5 @@
 ---
+import { AstroFont } from 'astro-font';
 import AppFooter from "../components/AppFooter.astro";
 import AppHeader from "../components/AppHeader.astro";
 ---
@@ -12,8 +13,19 @@ import AppHeader from "../components/AppHeader.astro";
         <meta name="generator" content={Astro.generator} />
         <meta name="description" content="Template built with tailwindcss using Tailus blocks v2" />
         <title>Tailus astro theme</title>
-
-        <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <AstroFont
+            config={[
+                {
+                    src: [],
+                    name: "Urbanist",
+                    preload: true,
+                    display: "swap",
+                    selector: "html",
+                    fallback: "sans-serif",
+                    googleFontsURL: 'https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap',
+                },
+            ]}
+        />
     </head>
     <body class="bg-white dark:bg-gray-900">
         <AppHeader />
@@ -31,7 +43,6 @@ import AppHeader from "../components/AppHeader.astro";
 </html>
 <style>
     html {
-        font-family: Urbanist, sans-serif;
         scroll-behavior: smooth;
     }
 
