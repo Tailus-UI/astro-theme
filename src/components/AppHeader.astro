@@ -1,5 +1,6 @@
 ---
 import Container from "./Container.astro";
+
 const links = [
     {
         to: "/#features",
@@ -48,18 +49,32 @@ const links = [
 </script>
 
 <header>
-    <nav class="absolute z-10 w-full border-b border-black/5 dark:border-white/5 lg:border-transparent">
-        <Container>
+    <!-- Top bar with contact links -->
+    <div class="bg-dark-blue text-white py-2">
+        <div class="max-w-7xl mx-auto flex justify-between items-center px-4 md:px-10 xl:px-10">
+            <div class="flex space-x-4">
+                <a href="tel:0420701987" class="hover:text-gray-300">Phone: 0420 701 9870</a>
+                <a href="mailto: mysydneyplumbing@gmail.com" class="hover:text-gray-300">Email: mysydneyplumbing@gmail.com</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="https://facebook.com" target="_blank" class="hover:text-gray-300">Facebook</a>
+                <a href="https://instagram.com" target="_blank" class="hover:text-gray-300">Instagram</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Empty white bar -->
+    <div class="bg-white py-10"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="absolute z-10 w-full border-b border-black/5 dark:border-white/5 lg:border-transparent bg-dark-blue">
+        <div class="max-w-7xl mx-auto px-4 md:px-10 xl:px-10">
             <div class="relative flex flex-wrap items-center justify-between gap-6 py-3 md:gap-0 md:py-4">
                 <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
-                    <a href="/#home" aria-label="logo" class="flex items-center space-x-2">
-                        <div aria-hidden="true" class="flex space-x-1">
-                            <div class="h-4 w-4 rounded-full bg-gray-900 dark:bg-white"></div>
-                            <div class="h-6 w-2 bg-primary"></div>
-                        </div>
-                        <span class="text-2xl font-bold text-gray-900 dark:text-white">Astrolus</span>
-                    </a>
-
+                    <div class="flex items-center space-x-2">
+                        <span class="text-2xl font-bold text-white">Sydney’s Plumbing Experts Near You</span>
+                    </div>
+                    
                     <div class="relative flex max-h-10 items-center lg:hidden">
                         <button aria-label="humburger" id="hamburger" class="relative -mr-6 p-6">
                             <div aria-hidden="true" id="line" class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300 dark:bg-gray-300"></div>
@@ -96,7 +111,7 @@ const links = [
                     </div>
                 </div>
             </div>
-        </Container>
+        </div>
     </nav>
 </header>
 
@@ -114,5 +129,9 @@ const links = [
     }
     .toggled div:last-child {
         @apply -translate-y-1 -rotate-45;
+    }
+
+    .bg-dark-blue {
+        background-color: #0B2843; /* Dark Blue */
     }
 </style>
