@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@tailwindcss/postcss':
-        specifier: 4.0.0-beta.8
-        version: 4.0.0-beta.8
       '@tailwindcss/vite':
         specifier: 4.0.0-beta.8
         version: 4.0.0-beta.8(vite@6.0.7(jiti@2.4.2)(lightningcss@1.29.0)(yaml@2.7.0))
@@ -20,18 +17,11 @@ importers:
       astro-font:
         specifier: ^0.0.72
         version: 0.0.72
-      postcss:
-        specifier: ^8.4.49
-        version: 8.4.49
       tailwindcss:
         specifier: 4.0.0-beta.8
         version: 4.0.0-beta.8
 
 packages:
-
-  '@alloc/quick-lru@5.2.0':
-    resolution: {integrity: sha512-UrcABB+4bUrFABwbluTIBErXwvbsU/V7TZWfmbgJfbkwiBuziS9gxdODUyuiecfdGQ85jglMW6juS3+z5TsKLw==}
-    engines: {node: '>=10'}
 
   '@astrojs/compiler@2.10.3':
     resolution: {integrity: sha512-bL/O7YBxsFt55YHU021oL+xz+B/9HvGNId3F9xURN16aeqDK9juHGktdkCSXz+U4nqFACq6ZFvWomOzhV+zfPw==}
@@ -678,9 +668,6 @@ packages:
   '@tailwindcss/oxide@4.0.0-beta.8':
     resolution: {integrity: sha512-fpZkAwKDFuRNbxQZrXViij2D38R6qqgAnctBR9NPyHxZqYDjn3uyk75alrDnSGj4wUCTAhOCEX4HCI9xCgKGdA==}
     engines: {node: '>= 10'}
-
-  '@tailwindcss/postcss@4.0.0-beta.8':
-    resolution: {integrity: sha512-fdxUB9iRm4QocxXiAX/6NlU/VQG/IU1NlDMSGcwvR91/lZNVmWElialB4AVzdsZXIpv5xgrbmz9bb4nvPrT2Ug==}
 
   '@tailwindcss/vite@4.0.0-beta.8':
     resolution: {integrity: sha512-ZNlj0fdeH4/uWXafrXklZY+TgmN7wOHWHHBL4i3xzD4BflcCDZJkgJER/8baJCpagMzwWDnA6CyXDX+2q7lMRQ==}
@@ -1830,8 +1817,6 @@ packages:
 
 snapshots:
 
-  '@alloc/quick-lru@5.2.0': {}
-
   '@astrojs/compiler@2.10.3': {}
 
   '@astrojs/internal-helpers@0.4.2': {}
@@ -2281,15 +2266,6 @@ snapshots:
       '@tailwindcss/oxide-linux-x64-musl': 4.0.0-beta.8
       '@tailwindcss/oxide-win32-arm64-msvc': 4.0.0-beta.8
       '@tailwindcss/oxide-win32-x64-msvc': 4.0.0-beta.8
-
-  '@tailwindcss/postcss@4.0.0-beta.8':
-    dependencies:
-      '@alloc/quick-lru': 5.2.0
-      '@tailwindcss/node': 4.0.0-beta.8
-      '@tailwindcss/oxide': 4.0.0-beta.8
-      lightningcss: 1.29.0
-      postcss: 8.4.49
-      tailwindcss: 4.0.0-beta.8
 
   '@tailwindcss/vite@4.0.0-beta.8(vite@6.0.7(jiti@2.4.2)(lightningcss@1.29.0)(yaml@2.7.0))':
     dependencies:
