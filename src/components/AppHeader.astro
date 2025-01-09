@@ -25,7 +25,7 @@ const links = [
     const navlinks = document.querySelector("#navlinks");
     const hamburger = document.querySelector("#hamburger");
     const layer = document.querySelector("#navLayer");
-    const links = [...navlinks.querySelector("ul").children];
+    const links = [...navlinks.querySelector("#links-group").children];
 
     function toggleNavlinks() {
         if (isToggled) {
@@ -74,23 +74,19 @@ const links = [
                 <div id="navLayer" aria-hidden="true" class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 dark:bg-gray-900/70 lg:hidden"></div>
                 <div id="navlinks" class="invisible absolute top-full left-0 z-20 w-full origin-top-right translate-y-1 scale-90 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 dark:border-gray-700 dark:bg-gray-800 dark:shadow-none lg:visible lg:relative lg:flex lg:w-fit lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:dark:bg-transparent">
                     <div class="w-full text-gray-600 dark:text-gray-200 lg:w-auto lg:pr-4 lg:pt-0">
-                        <ul class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-sm">
+                        <div id="links-group" class="flex flex-col gap-6 tracking-wide lg:flex-row lg:gap-0 lg:text-sm">
                             {
                                 links.map((link) => (
-                                    <li>
-                                        <a href={link.to} class="hover:text-primary block transition dark:hover:text-white md:px-4">
-                                            <span>{link.label}</span>
-                                        </a>
-                                    </li>
+                                    <a href={link.to} class="hover:text-primary block transition dark:hover:text-white md:px-4">
+                                        <span>{link.label}</span>
+                                    </a>
                                 ))
                             }
-                            <li>
-                                <a href="https://tailtips.dev" target="_blank" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4">
-                                    <span>TailwindCSS Tips</span>
-                                    <span class="flex rounded-full border bg-primary/20 px-2 py-0.5 text-xs tracking-wider text-purple-700 dark:bg-white/10 dark:text-orange-300">New</span>
-                                </a>
-                            </li>
-                        </ul>
+                            <a href="https://tailtips.dev" target="_blank" class="flex gap-2 font-semibold text-gray-700 transition hover:text-primary dark:text-white dark:hover:text-white md:px-4">
+                                <span>TailwindCSS Tips</span>
+                                <span class="flex rounded-full border bg-primary/20 px-2 py-0.5 text-xs tracking-wider text-purple-700 dark:bg-white/10 dark:text-orange-300">New</span>
+                            </a>
+                        </div>
                     </div>
 
                     <div class="mt-12 lg:mt-0">
